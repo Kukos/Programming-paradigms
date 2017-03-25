@@ -6,16 +6,17 @@
 ; scheme --load ex1.scm ( a potem przyklady wpisac w interpreter )
 
 (define (_mymap fun lista lista2)
-  (if (zero? (length lista))
-      lista2
-      ; Tutaj jesli list1 nie pusta to wez usun pierwszy element i
-      ; dodaj go do listy2, ale obron go za pomoca @func
-	  (_mymap fun (list-tail lista 1) (append lista2 (list (fun (car lista)))))
+    (if (zero? (length lista))
+        lista2
+        ; Tutaj jesli list1 nie pusta to wez usun pierwszy element i
+        ; dodaj go do listy2, ale obron go za pomoca @func
+	    (_mymap fun (list-tail lista 1) (append lista2 (list (fun (car lista)))))
    )
 )
 
 ; potrzeba nam pusta lista 2 wiec mamy pomocnicza funkcje "prywatna"
-(define (mymap fun lista) (_mymap fun lista '()))
+(define (mymap fun lista)
+    (_mymap fun lista '()))
 
 
 ; przyklady uzycia
