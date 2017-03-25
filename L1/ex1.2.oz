@@ -22,4 +22,4 @@ in
 end
 
 % Jakis przyklad: Euler + Fib + Catalan
-{Browse {ListMerge3 [2 3 5 7 11 41] [1 1 2 3 5 8] [1 1 2 5 14 42]}}
+{Browse {ListMerge3 [2 3 5 11 17 41] [1 1 2 3 5 8] [1 1 2 5 14 42]}}
