@@ -13,6 +13,6 @@ end
 declare
 fun {Reverse L}
     % dokladaj w odwrotnej kolejnosci zaczynajac od pustej
-    {List.foldL L fun {$ X Y} {Append [Y] X} end nil}
+    {List.foldL L fun {$ X Y} Y | X end nil}
 end
 {Browse {Reverse [1 2 3]}}

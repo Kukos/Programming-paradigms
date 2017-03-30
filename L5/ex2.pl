@@ -12,5 +12,4 @@ once(List,X) :- select(X, List, TempList),
   spelni, dzieki temu wiemy ze X jest DOKLADNIE 2 razy
 */
 twice(List,X) :- 	select(X, List, TempList),
-		 			member(X, TempList),
 		 			once(TempList, X).
